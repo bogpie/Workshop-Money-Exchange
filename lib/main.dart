@@ -108,12 +108,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
 
                 onChanged: (text) {
-                  setState(
-                    () {
-                      _changeable = text;
-                      _errorText = null;
-                    },
-                  );
+                  setState(() {
+                    _changeable = text;
+                    _errorText = null;
+                  });
                 },
 
                 controller: _controller,
